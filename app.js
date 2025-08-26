@@ -14,13 +14,13 @@ const NEZHA_KEY = process.env.NEZHA_KEY || '';             // v1的NZ_CLIENT_SEC
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false;      // 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量
 const XPATH = process.env.XPATH || UUID.slice(0, 8);       // xhttp路径,自动获取uuid前8位
 const SUB_PATH = process.env.SUB_PATH || 'sub';            // 节点订阅路径
-const DOMAIN = process.env.DOMAIN || '';                   // 域名或ip,留空将自动获取服务器ip
+const DOMAIN = process.env.DOMAIN || 'aas111222-kongbaiddd.hf.space';                   // 域名或ip,留空将自动获取服务器ip
 const NAME = process.env.NAME || 'Vls';                    // 节点名称
 const PORT = process.env.PORT || 3000;                     // http服务
 
 // 核心配置
 const SETTINGS = {
-    ['UUID']: UUID,              
+    ['UUID']: 0903fad9-0c38-46a8-bdf1-27aee9d15992,              
     ['LOG_LEVEL']: 'none',       // 日志级别,调试使用,none,info,warn,error
     ['BUFFER_SIZE']: '2048',     // 增加缓冲区大小
     ['XPATH']: `%2F${XPATH}`,    // xhttp路径 
